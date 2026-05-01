@@ -1,0 +1,219 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPXsCSbNvhr1Rqm86Gokw+V",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aman685892/Data-Analytics-Practice/blob/main/Python%20Basics-Syntax%20And%20Semantics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "13cl2yZVrexh",
+        "outputId": "5885db22-f57c-4c5b-8a18-e54b21fc3610"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"hello\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## Python is case sensitive language\n",
+        "name=\"aman\"\n",
+        "Name=\"Aman\"\n",
+        "print(name)\n",
+        "print(Name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2XP3b4bgt7p4",
+        "outputId": "9901d17c-74f2-4f4c-b7fd-33e9a767a0ef"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "aman\n",
+            "Aman\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age=37\n",
+        "if age>30:\n",
+        "  print(age)\n",
+        "print(age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ce_TqsF1uEYW",
+        "outputId": "88384aff-fea4-43f4-e2f9-e13a2ab58d3d"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "37\n",
+            "37\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=8;y=7;z=x+y\n",
+        "print(z)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ONfhzOaauf47",
+        "outputId": "3b1ce87e-d2ab-4caa-a24c-7d9c27abbf19"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name=\"rahul\"\n",
+        "age=89\n",
+        "print(type(name))\n",
+        "print(type(age))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wW3XbBjlu5ud",
+        "outputId": "6e1000d3-08b8-4126-9e59-372baddc6e34"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## Indentation error\n",
+        "if True:\n",
+        "  print(\"aman\")\n",
+        "  if False:\n",
+        "    print(Anshu)\n",
+        "  print(\"Rahul\")\n",
+        "print(\"Charan\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8u05r47ovqOh",
+        "outputId": "fb2dbca2-335c-4b4f-a7cb-e732364c28d3"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "aman\n",
+            "Rahul\n",
+            "Charan\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=b\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 158
+        },
+        "id": "SfpwZFfuwajS",
+        "outputId": "833f993f-ed1a-4d46-df59-10b6ac874b8d"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'b' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_7671/4143652128.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0ma\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mb\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'b' is not defined"
+          ]
+        }
+      ]
+    }
+  ]
+}
