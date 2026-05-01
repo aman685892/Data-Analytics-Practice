@@ -1,0 +1,288 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNA2Pq8BEg11ES5ZlXOVbGm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aman685892/Data-Analytics-Practice/blob/main/9.%20Variables%20In%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IjPXew5Lw2OR",
+        "outputId": "f31f6bc4-2211-4b7c-a575-a6da9dde2997"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5.1\n",
+            "aman\n",
+            "2211035\n"
+          ]
+        }
+      ],
+      "source": [
+        "name=\"aman\"\n",
+        "age=5.1\n",
+        "Roll=2211035\n",
+        "print(age)\n",
+        "print(name)\n",
+        "print(Roll)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "first_name=\"aman\"\n",
+        "last_name=\"kumar\"\n",
+        "print(first_name)\n",
+        "print(last_name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EjsAJU9_0HSw",
+        "outputId": "055a7944-d7e7-4ff6-d38b-6c1cec0f7844"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "aman\n",
+            "kumar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name=\"rahul\"\n",
+        "Name=\"Raju\"\n",
+        "print(name==Name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MIMsgASH0v_-",
+        "outputId": "b29b760d-9464-44ce-8a12-d150ba808607"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age=89\n",
+        "print(type(age))\n",
+        "## Type conversions\n",
+        "age_str=str(age)\n",
+        "print(age_str)\n",
+        "print(type(age_str))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "67nPmYbP0-Z0",
+        "outputId": "1643876f-69c1-4a38-9286-5b1ef4f9205e"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "89\n",
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "height=5.3\n",
+        "print(height)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qqZApKfr2gBt",
+        "outputId": "2854b9da-60a4-4a5c-a8a7-2a25d7033e0e"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5.3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(height))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l-pXc2XW24zW",
+        "outputId": "e44c5ab9-f1a5-498a-b34b-c98183ccc67e"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "_height=int(height)\n",
+        "print(type(_height))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1NoLzAIH29R9",
+        "outputId": "b46e4a28-6893-4ad3-9475-1651082602e2"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## To take input from the user\n",
+        "x=int(input(\"Enter the roll number\"))\n",
+        "print(x)\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qZyxcNHE3J3l",
+        "outputId": "bff7c99f-8449-4091-8402-1508eee16a7a"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the roll number67\n",
+            "67\n",
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## simple calculation\n",
+        "num1=float(input(\"Enter the num1\"))\n",
+        "num2=float(input(\"Enter the num2\"))\n",
+        "sum=num1+num2\n",
+        "diff=num1-num2\n",
+        "mul=num1*num2\n",
+        "divide=num1/num2\n",
+        "print(\"sum\",sum)\n",
+        "print(\"diff\",diff)\n",
+        "print(\"mul\",mul)\n",
+        "print(\"divide\",divide)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvsyedJT4AYK",
+        "outputId": "60422fb2-0931-4814-ee98-71fbd6d7abd1"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the num134\n",
+            "Enter the num223\n",
+            "sum 57.0\n",
+            "diff 11.0\n",
+            "mul 782.0\n",
+            "divide 1.4782608695652173\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "GKEIBv7844GX"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
